@@ -1,0 +1,39 @@
+*,
+*html,
+*::after,
+*::before {
+	box-sizing: border-box;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: "Poppins", sans-serif;
+	color: #fff;
+	padding: 0;
+}
+a {
+	text-decoration: none;
+	color: inherit;
+}
+ul,
+li {
+	list-style: none;
+}
+.container {
+	max-width: 1150px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+.container-litle {
+	width: 22%;
+	padding: 0;
+	display: inline-block;
+}
+.container-medium {
+	max-width: 40%;
+	padding: 0 15px;
+	display: inline-block;
+	color: #000;
+}
