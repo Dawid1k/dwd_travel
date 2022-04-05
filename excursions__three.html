@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>excursions</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@400;500;600;700;900&display=swap"
+		rel="stylesheet">
+	<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet"
+		type="text/css" />
+	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+	<link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+	<header class="header-excursions" style="background-image: url(./images/header-excursions.jpg); background-size: cover;">
+		<div class="container">
+			<div class="header__inner">
+				<div class="header__logo">
+					<a href="#" class="logo__link">
+						<img src="../images/header-logo.png" alt="">
+					</a>
+				</div>
+				<div class="menu">
+					<nav class="menu-inner">
+						<ul class="menu__list">
+							<li><a href="index.html" class="menu__list-link">Главная</a></li>
+							<li><a href="excursions.html" class="menu__list-link menu__list--excursions">Экскурсии</a></li>
+							<li><a href="office.html" class="menu__list-link">Личный кабинет</a></li>
+						</ul>
+						<div class="box-menu">
+							<div class="btnb not-active">
+								<span class="burger__menu"></span>
+								<span class="burger__menu"></span>
+								<span class="burger__menu"></span>
+							</div>
+						</div>
+					</nav>
+				</div>
+			</div>
+			<div class="header__content-inner">
+				<div class="header__content-caption">
+					<h2 class="header__title-excursions">НАШИ ЭКСКУРСИИ</h2>
+				</div>
+			</div>
+	</header>
+	<section class="excursions-form">
+		<div class="container">
+			<div class="excursions-form__box">
+				<div class="excursions-form__inner">
+					<a href="#" class="excursions__form-menu">АВТОБУСНЫЙ ТУР</a>
+					<a href="#" class="excursions__form-menu">ДЖИППИНГ</a>
+					<a href="#" class="excursions__form-menu">ЯХТИНГ</a>
+					<a href="#" class="excursions__form-menu">КАНЬОНИНГ</a>
+				</div>
+				<form action="" class="excursions-form__menu-content">
+					<input type="text" class="excursions-form__input excursions-form__country" placeholder="Украина">
+					<input type="text" class="excursions-form__input excursions-form__input-date" placeholder="10 июня 2022">
+					<input type="text" class="excursions-form__input excursions-form__input-people" placeholder="5 человек">
+					<div class="excursions-form__btn">
+						<button type="button" class="excursions-input__btn">Показать</button>
+					</div>
+				</form>
+
+			</div>
+		</div>
+	</section>
+
+	<section class="filters">
+		<div class="container">
+			<div class="filters-box__container">
+				<div class="filters__content-inner">
+					<div class="filters__content-title">
+						<h4>Фильтры</h4>
+					</div>
+					<div class="filters__content-price">
+						<div class="filters__content-subtitle filters__content-subtitle-hide ">
+							<h4 class="filters-subtitle filters__subtitle-more">Стоимость</h4>
+						</div>
+						<div class="slidercontainerbtn" type="button"
+							onclick="$('.slidercontainerbox,').slideToggle('slow');">
+						</div>
+						<div class="slidercontainerbox ">
+							<input type="text" class="slidercontainerbox-left" />
+							<input type="text" class="slidercontainerbox-right" />
+							<div class="filters-column"></div>
+							<div class="filters-box"></div>
+						</div>
+
+					</div>
+				</div>
+				<div class="number-people__container">
+					<div class="filters__content-subtitle filters__content-subtitle-hide ">
+						<h4 class="filters-subtitle filters__subtitle-more">Количество человек</h4>
+					</div>
+					<div class="peoplecontainerbtn" type="button" onclick="$('.number-people__inner,').slideToggle('slow');">
+					</div>
+					<div class="number-people__inner">
+						<button class="number-people__btn">1 чел.</button>
+						<button class="number-people__btn">2 чел.</button>
+						<button class="number-people__btn">3 чел.</button>
+						<button class="number-people__btn">4 чел.</button>
+						<button class="number-people__btn">5 чел.</button>
+						<button class="number-people__btn">6 чел.</button>
+						<button class="number-people__btn">7 чел.</button>
+						<button class="number-people__btn">8 чел.</button>
+						<button class="number-people__btn">9 чел.</button>
+						<button class="number-people__btn">10 чел.</button>
+						<button class="number-people__btn number-people__btn-more">Больше 10 чел.</button>
+					</div>
+				</div>
+				<div class="place-content">
+					<div class="filters__content-subtitle filters__content-subtitle-hide ">
+						<h4 class="filters-subtitle filters__subtitle-more">Место</h4>
+					</div>
+					<div class="placecontainerbtn" type="button" onclick="$('.place-box,').slideToggle('slow');"></div>
+					<div class="place-box">
+						<label class="place-number">Эмираты
+							<input type="radio" value="name" name="country" checked="checked">
+							<span class="checkmark"></span>
+						</label>
+						<label class="place-number">Греция
+							<input type="radio" value="name" name="country">
+							<span class="checkmark"></span>
+						</label>
+						<label class="place-number">Австрия
+							<input type="radio" value="name" name="country">
+							<span class="checkmark"></span>
+						</label>
+						<label class="place-number">Португалия
+							<input type="radio" value="name" name="country">
+							<span class="checkmark"></span>
+						</label>
+						<label class="place-number">Андора
+							<input type="radio" value="name" name="country">
+							<span class="checkmark"></span>
+						</label>
+						<label class="place-number">Италия
+							<input type="radio" value="name" name="country">
+							<span class="checkmark"></span>
+						</label>
+						<label class="place-number">Индонезия
+							<input type="radio" value="name" name="country">
+							<span class="checkmark"></span>
+						</label>
+						<label class="place-number">Швейцария
+							<input type="radio" value="name" name="country">
+							<span class="checkmark"></span>
+						</label>
+						<label class="place-number">Франция
+							<input type="radio" value="name" name="country">
+							<span class="checkmark"></span>
+						</label>
+						<label class="place-number">Норвегия
+							<input type="radio" value="name" name="country">
+							<span class="checkmark"></span>
+						</label>
+						<label class="place-number">Мальта
+							<input type="radio" value="name" name="country">
+							<span class="checkmark"></span>
+						</label>
+					</div>
+				</div>
+				<div class="duration-content">
+					<div class="filters__content-subtitle filters__content-subtitle-hide ">
+						<h4 class="filters-subtitle filters__subtitle-more">Длительность</h4>
+					</div>
+					<div class="placecontainerbtn" type="button" onclick="$('.duration-box,').slideToggle('slow');"></div>
+					<div class="duration-box">
+						<label class="place-number">7 дней
+							<input type="radio" checked="checked" name="time">
+							<span class="checkmark"></span>
+						</label>
+						<label class="place-number">14 дней
+							<input type="radio" name="time">
+							<span class="checkmark"></span>
+						</label>
+						<label class="place-number">28 дней
+							<input type="radio" name="time">
+							<span class="checkmark"></span>
+						</label>
+					</div>
+				</div>
+				<div class="date-content">
+					<div class="filters__content-subtitle filters__content-subtitle-hide ">
+						<h4 class="filters-subtitle filters__subtitle-more">Дата</h4>
+					</div>
+					<div class="placecontainerbtn" type="button"
+						onclick="$('.date-content__calendar,').slideToggle('slow');">
+					</div>
+					<div class="date-content__calendar">
+						<div class="month">
+							<ul>
+								<li class="prev">&#10094;</li>
+								<li class="next">&#10095;</li>
+								<li>Август<br><span style="font-size:18px">2022</span></li>
+							</ul>
+						</div>
+						<ul class="weekdays">
+							<li>Пн</li>
+							<li>Вт</li>
+							<li>Ср</li>
+							<li>Чт</li>
+							<li>Пт</li>
+							<li>Сб</li>
+							<li>Вс</li>
+						</ul>
+
+						<ul class="days">
+							<li>1</li>
+							<li>2</li>
+							<li>3</li>
+							<li>4</li>
+							<li>5</li>
+							<li>6</li>
+							<li>7</li>
+							<li>8</li>
+							<li>9</li>
+							<li>10</li>
+							<li>11</li>
+							<li>12</li>
+							<li>13</li>
+							<li>14</li>
+							<li><span class="active">15</span></li>
+							<li>16</li>
+							<li>17</li>
+							<li>18</li>
+							<li>19</li>
+							<li>20</li>
+							<li>21</li>
+							<li>22</li>
+							<li>23</li>
+							<li>24</li>
+							<li>25</li>
+							<li>26</li>
+							<li>27</li>
+							<li>28</li>
+							<li>29</li>
+							<li>30</li>
+							<li>31</li>
+						</ul>
+					</div>
+				</div>
+				<div class="view-content">
+					<div class="view-btn">
+						<a href="excursions.html" class="view-btn__link">Показать</a>
+					</div>
+					<a href="excursions.html" class="reset">Сбросить фильтры</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="our-tours">
+		<div class="container">
+			<div class="our-tours__box-container">
+				<div class="our-tours__title">
+					<h3 class="tours__title">Наши туры</h3>
+				</div>
+
+				<div class="our-tours__content">
+					<div class="our-tours__slider">
+						<div class="our-tours__img">
+							<img src="../images/tours-9.jpg" alt="photo slide" class="tours-img">
+						</div>
+						<div class="our-tours__slider-content">
+							<h6 class="our-tours__subtitle">Автобусный тур</h6>
+							<h4 class="our-tours__caption">Путешествие по Франции (Париж)</h4>
+							<div class="our-tours__price-content">
+								<div class="our-tours__price">
+									<span class="tours-price">650 $</span>
+									<p>Взрослый билет</p>
+								</div>
+								<div class="our-tours__price">
+									<span class="tours-price">350 $</span>
+									<p>Детский билет</p>
+								</div>
+								<div class="our-tours__price">
+									<span class="tours-price">3 дня</span>
+								</div>
+							</div>
+							<div class="our-tours__text">
+								<p class="tours-text">Вас ждет путешествие по "Франции" на Рено Талисман (4
+									места). По маршруту вас будет сопровождать профессиональный гид. Посадка на экскурсию
+									осуществляется с вашего отеля или ближайшей автобусной остановки. Пересечение границы без
+									пересадок...</p>
+							</div>
+							<div class="our-tours__btn">
+								<a href="tour-france.html" class="tours-btn">Подробнее
+									<div class="tours-icon">
+										<svg class="tours-svg" tabindex=0 width="40" height="40" viewBox="0 0 40 40" title="heart"
+											fill="none" xmlns="http://www.w3.org/2000/svg">
+											<circle class="svg-path" cx="20" cy="20" r="20" fill="#EDEDED" />
+											<path class="svg-path"
+												d="M28.8401 12.61C28.3294 12.099 27.7229 11.6936 27.0555 11.4171C26.388 11.1405 25.6726 10.9982 24.9501 10.9982C24.2276 10.9982 23.5122 11.1405 22.8448 11.4171C22.1773 11.6936 21.5709 12.099 21.0601 12.61L20.0001 13.67L18.9401 12.61C17.9084 11.5783 16.5092 10.9987 15.0501 10.9987C13.5911 10.9987 12.1918 11.5783 11.1601 12.61C10.1284 13.6417 9.54883 15.041 9.54883 16.5C9.54883 17.959 10.1284 19.3583 11.1601 20.39L12.2201 21.45L20.0001 29.23L27.7801 21.45L28.8401 20.39C29.3511 19.8792 29.7565 19.2728 30.033 18.6053C30.3096 17.9379 30.4519 17.2225 30.4519 16.5C30.4519 15.7775 30.3096 15.0621 30.033 14.3946C29.7565 13.7272 29.3511 13.1208 28.8401 12.61V12.61Z"
+												stroke="#D4D4D4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+										</svg>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="our-tours__content">
+						<div class="our-tours__slider">
+							<div class="our-tours__img">
+								<img src="../images/tours-10.jpg" alt="photo slide" class="tours-img">
+							</div>
+							<div class="our-tours__slider-content">
+								<h6 class="our-tours__subtitle">Автобусный тур</h6>
+								<h4 class="our-tours__caption">Путешествие по Италии (Салерно)</h4>
+								<div class="our-tours__price-content">
+									<div class="our-tours__price">
+										<span class="tours-price">400 $</span>
+										<p>Взрослый билет</p>
+									</div>
+									<div class="our-tours__price">
+										<span class="tours-price">250 $</span>
+										<p>Детский билет</p>
+									</div>
+									<div class="our-tours__price">
+										<span class="tours-price">3 дня</span>
+									</div>
+								</div>
+								<div class="our-tours__text">
+									<p class="tours-text">Вас ждет путешествие по "Италии" на Мерседес Вито (10
+										мест). По маршруту вас будет сопровождать профессиональный гид. Посадка на экскурсию
+										осуществляется с вашего отеля или ближайшей автобусной остановки. Пересечение границы без
+										пересадок...</p>
+								</div>
+								<div class="our-tours__btn">
+									<a href="tour-italy.html" class="tours-btn">Подробнее
+										<div class="tours-icon">
+											<svg class="tours-svg" tabindex=0 width="40" height="40" viewBox="0 0 40 40"
+												title="heart" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<circle class="svg-path" cx="20" cy="20" r="20" fill="#EDEDED" />
+												<path class="svg-path"
+													d="M28.8401 12.61C28.3294 12.099 27.7229 11.6936 27.0555 11.4171C26.388 11.1405 25.6726 10.9982 24.9501 10.9982C24.2276 10.9982 23.5122 11.1405 22.8448 11.4171C22.1773 11.6936 21.5709 12.099 21.0601 12.61L20.0001 13.67L18.9401 12.61C17.9084 11.5783 16.5092 10.9987 15.0501 10.9987C13.5911 10.9987 12.1918 11.5783 11.1601 12.61C10.1284 13.6417 9.54883 15.041 9.54883 16.5C9.54883 17.959 10.1284 19.3583 11.1601 20.39L12.2201 21.45L20.0001 29.23L27.7801 21.45L28.8401 20.39C29.3511 19.8792 29.7565 19.2728 30.033 18.6053C30.3096 17.9379 30.4519 17.2225 30.4519 16.5C30.4519 15.7775 30.3096 15.0621 30.033 14.3946C29.7565 13.7272 29.3511 13.1208 28.8401 12.61V12.61Z"
+													stroke="#D4D4D4" stroke-width="2" stroke-linecap="round"
+													stroke-linejoin="round" />
+											</svg>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="our-tours__content our-tours__view">
+							<div class="our-tours__slider">
+								<div class="our-tours__img">
+									<img src="../images/tours-11.jpg" alt="photo slide" class="tours-img">
+								</div>
+								<div class="our-tours__slider-content">
+									<h6 class="our-tours__subtitle">Автобусный тур</h6>
+									<h4 class="our-tours__caption">Путешествие по Норвегии (Тромсо)</h4>
+									<div class="our-tours__price-content">
+										<div class="our-tours__price">
+											<span class="tours-price">550 $</span>
+											<p>Взрослый билет</p>
+										</div>
+										<div class="our-tours__price">
+											<span class="tours-price">200 $</span>
+											<p>Детский билет</p>
+										</div>
+										<div class="our-tours__price">
+											<span class="tours-price">3 дня</span>
+										</div>
+									</div>
+									<div class="our-tours__text">
+										<p class="tours-text">Вас ждет путешествие по "Норвегии" на Додже Рам
+											(4
+											места). По маршруту вас будет сопровождать профессиональный гид. Посадка на экскурсию
+											осуществляется с вашего отеля или ближайшей автобусной остановки. Пересечение границы
+											без
+											пересадок...</p>
+									</div>
+									<div class="our-tours__btn">
+										<a href="tour-portugal.html" class="tours-btn">Подробнее
+											<div class="tours-icon">
+												<svg class="tours-svg" tabindex=0 width="40" height="40" viewBox="0 0 40 40"
+													title="heart" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<circle class="svg-path" cx="20" cy="20" r="20" fill="#EDEDED" />
+													<path class="svg-path"
+														d="M28.8401 12.61C28.3294 12.099 27.7229 11.6936 27.0555 11.4171C26.388 11.1405 25.6726 10.9982 24.9501 10.9982C24.2276 10.9982 23.5122 11.1405 22.8448 11.4171C22.1773 11.6936 21.5709 12.099 21.0601 12.61L20.0001 13.67L18.9401 12.61C17.9084 11.5783 16.5092 10.9987 15.0501 10.9987C13.5911 10.9987 12.1918 11.5783 11.1601 12.61C10.1284 13.6417 9.54883 15.041 9.54883 16.5C9.54883 17.959 10.1284 19.3583 11.1601 20.39L12.2201 21.45L20.0001 29.23L27.7801 21.45L28.8401 20.39C29.3511 19.8792 29.7565 19.2728 30.033 18.6053C30.3096 17.9379 30.4519 17.2225 30.4519 16.5C30.4519 15.7775 30.3096 15.0621 30.033 14.3946C29.7565 13.7272 29.3511 13.1208 28.8401 12.61V12.61Z"
+														stroke="#D4D4D4" stroke-width="2" stroke-linecap="round"
+														stroke-linejoin="round" />
+												</svg>
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="our-tours__content our-tours__view">
+								<div class="our-tours__slider">
+									<div class="our-tours__img">
+										<img src="../images/tours-12.jpg" alt="photo slide" class="tours-img">
+									</div>
+									<div class="our-tours__slider-content">
+										<h6 class="our-tours__subtitle">Автобусный тур</h6>
+										<h4 class="our-tours__caption">Путешествие по Мальте (Марса)</h4>
+										<div class="our-tours__price-content">
+											<div class="our-tours__price">
+												<span class="tours-price">750 $</span>
+												<p>Взрослый билет</p>
+											</div>
+											<div class="our-tours__price">
+												<span class="tours-price">450 $</span>
+												<p>Детский билет</p>
+											</div>
+											<div class="our-tours__price">
+												<span class="tours-price">4 дня</span>
+											</div>
+										</div>
+										<div class="our-tours__text">
+											<p class="tours-text">Вас ждет путешествие по "Мальте" на Ауди а6 (4
+												места). По маршруту вас будет сопровождать профессиональный гид. Посадка на
+												экскурсию
+												осуществляется с вашего отеля или ближайшей автобусной остановки. Пересечение
+												границы
+												без
+												пересадок...</p>
+										</div>
+										<div class="our-tours__btn">
+											<a href="tour-grecee.html" class="tours-btn">Подробнее
+												<div class="tours-icon">
+													<svg class="tours-svg" tabindex=0 width="40" height="40" viewBox="0 0 40 40"
+														title="heart" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<circle class="svg-path" cx="20" cy="20" r="20" fill="#EDEDED" />
+														<path class="svg-path"
+															d="M28.8401 12.61C28.3294 12.099 27.7229 11.6936 27.0555 11.4171C26.388 11.1405 25.6726 10.9982 24.9501 10.9982C24.2276 10.9982 23.5122 11.1405 22.8448 11.4171C22.1773 11.6936 21.5709 12.099 21.0601 12.61L20.0001 13.67L18.9401 12.61C17.9084 11.5783 16.5092 10.9987 15.0501 10.9987C13.5911 10.9987 12.1918 11.5783 11.1601 12.61C10.1284 13.6417 9.54883 15.041 9.54883 16.5C9.54883 17.959 10.1284 19.3583 11.1601 20.39L12.2201 21.45L20.0001 29.23L27.7801 21.45L28.8401 20.39C29.3511 19.8792 29.7565 19.2728 30.033 18.6053C30.3096 17.9379 30.4519 17.2225 30.4519 16.5C30.4519 15.7775 30.3096 15.0621 30.033 14.3946C29.7565 13.7272 29.3511 13.1208 28.8401 12.61V12.61Z"
+															stroke="#D4D4D4" stroke-width="2" stroke-linecap="round"
+															stroke-linejoin="round" />
+													</svg>
+												</div>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section> -->
+	<section class="next-page">
+		<div class="container">
+			<div class="next-page__inner-content">
+				<ul class="next-page__inner">
+					<li class="next-page__list">
+						<a href="excursions.html" class="next-page__link next-page__link-icons">1</a>
+					</li>
+					<li class="next-page__list">
+						<a href="excursions__two.html" class="next-page__link">2</a>
+					</li>
+					<li class="next-page__list">
+						<a href="excursions__three.html" class="next-page__link next-page__link-arrow next-page__focus">3</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+
+	<footer class="footer footer-tours">
+		<div class="container">
+			<div class="footer__content footer__content-tours ">
+				<div class="footer-logo">
+					<img class="footer-logo__img" src="./images/footer-logo.png" alt="">
+				</div>
+				<div class="footer-menu">
+					<nav class="footer-menu__inner">
+						<ul class="footer-menu__list">
+							<li><a href="index.html" class="menu__link">Главная</a></li>
+							<li><a href="excursions.html" class="menu__link">Экскурсии</a></li>
+							<li><a href="office.html" class="menu__link">Личный кабинет</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="footer-socials__phone">
+					<a href="tel:+380999098788" class="socials-phone-viber">+38 099 909 87 88</a>
+					<a href="tel:+380965057707" class="socials-phone-telegram">+38 096 505 77 07</a>
+					<a href="#" class="socials-phone-bot">Телеграм-бот DwdTravel</a>
+				</div>
+				<div class="footer-social">
+					<div class="footer-social__mail">
+						<a href="mailto:office@perotravel.ru" class="social__mail">office@perotravel.ru</a>
+					</div>
+					<div class="footer-social__network">
+						<a href="#" class="social__network">
+							<img src="./images/vkontakte-icon.svg" alt="" class="social__network"></a>
+						<a href="#" class="social__network">
+							<img src="./images/instagram-icon.svg" alt="" class="social__network"></a>
+						<a href="#" class="social__network">
+							<img src="./images/facebook-icon.svg" alt="" class="social__network"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<script src="js/main.min.js"></script>
+		<script type="text/javascript" src="slick/slick.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+		<script src="js/libs.min.js"></script>
+		<script src="js/main.js"></script>
+
+
+</body>
+
+</html>
