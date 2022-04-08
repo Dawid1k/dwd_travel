@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Office</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@400;500;600;700;900&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+	<link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+	<header class="header-excursions"
+		style="background-image: url('./images/office/tour-office-header.jpg'); height: 670px; background-position: center;">
+		<div class="container">
+			<div class="header__inner">
+				<div class="header__logo">
+					<a href="#" class="logo__link">
+						<img src="./images/header-logo.png" alt="">
+					</a>
+				</div>
+				<div class="menu">
+					<nav class="menu-inner">
+						<ul class="menu__list">
+							<li><a href="index.html" class="menu__list-link">Главная</a></li>
+							<li><a href="excursions.html" class="menu__list-link">Экскурсии</a>
+							</li>
+							<li><a href="office.html" class="menu__list-link  menu__list--excursions">Личный кабинет</a></li>
+						</ul>
+						<div class="box-menu">
+							<div class="btnb not-active">
+								<span class="burger__menu"></span>
+								<span class="burger__menu"></span>
+								<span class="burger__menu"></span>
+							</div>
+						</div>
+					</nav>
+				</div>
+			</div>
+			<div class="header__content-inner">
+				<div class="header__content-caption">
+					<h6 class="header__subtitle-excursions tour-overview__subtitle">Мой кабинет</h6>
+					<h2 class="header__title-excursions tour-overview__title">Мое Путешествие</h2>
+					<a href="excursions__two.html" class="tours-btn tours-overview__btn">К другим экскурсиям
+						<div class="tours-icon">
+							<svg class="tours-svg tour-overview__like" tabindex=0 width="40" height="40" viewBox="0 0 40 40"
+								title="heart" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<circle class="svg-path" cx="20" cy="20" r="20" fill="transparent" />
+								<path class="svg-path"
+									d="M28.8401 12.61C28.3294 12.099 27.7229 11.6936 27.0555 11.4171C26.388 11.1405 25.6726 10.9982 24.9501 10.9982C24.2276 10.9982 23.5122 11.1405 22.8448 11.4171C22.1773 11.6936 21.5709 12.099 21.0601 12.61L20.0001 13.67L18.9401 12.61C17.9084 11.5783 16.5092 10.9987 15.0501 10.9987C13.5911 10.9987 12.1918 11.5783 11.1601 12.61C10.1284 13.6417 9.54883 15.041 9.54883 16.5C9.54883 17.959 10.1284 19.3583 11.1601 20.39L12.2201 21.45L20.0001 29.23L27.7801 21.45L28.8401 20.39C29.3511 19.8792 29.7565 19.2728 30.033 18.6053C30.3096 17.9379 30.4519 17.2225 30.4519 16.5C30.4519 15.7775 30.3096 15.0621 30.033 14.3946C29.7565 13.7272 29.3511 13.1208 28.8401 12.61V12.61Z"
+									stroke="#D4D4D4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+							</svg>
+						</div>
+					</a>
+				</div>
+				<div class="box__lang box__lang-excursions">
+					<a href="excursions.html" class="box__lang-ru box__lang-active">RU</a>
+					<a href="office-eng.html" class="box__lang-eng">ENG</a>
+				</div>
+			</div>
+	</header>
+	<section class="excursions-form">
+		<div class="container">
+			<div class="excursions-form__box">
+				<div class="excursions-form__inner">
+					<a href="#" class="excursions__form-menu">АВТОБУСНЫЙ ТУР</a>
+					<a href="#" class="excursions__form-menu">ДЖИППИНГ</a>
+					<a href="#" class="excursions__form-menu">ЯХТИНГ</a>
+					<a href="#" class="excursions__form-menu">КАНЬОНИНГ</a>
+				</div>
+				<form action="" class="excursions-form__menu-content">
+					<input type="text" class="excursions-form__input excursions-form__country" placeholder="Украина">
+					<input type="text" class="excursions-form__input excursions-form__input-date" placeholder="10 июня 2022">
+					<input type="text" class="excursions-form__input excursions-form__input-people" placeholder="5 человек">
+					<div class="excursions-form__btn">
+						<button type="button" class="excursions-input__btn">Показать</button>
+					</div>
+				</form>
+
+			</div>
+		</div>
+	</section>
+	<section class="book-tour">
+		<div class="book-tour__inner" style="margin-top: 0;">
+			<div class="container">
+			<div class="book-tour__container">
+				<h4 class="book-tour__title" style="text-align: center;">Авторизация</h4>
+				<form class="book-tour-form__menu-content">
+					<input type="text" class="excursions-form__input excursions-form__country book-form"
+						placeholder="Как Вас зовут ?">
+					<input type="text" class="excursions-form__input excursions-form__input-date book-form"
+						placeholder="Ваш mail адрес.">
+					<input type="text" class="excursions-form__input excursions-form__input-people book-form"
+						placeholder="В какую страну собрались ?">
+					<div class="excursions-form__btn">
+						<button type="button" class="excursions-input__btn book-form__btn" style="margin-bottom: 50px;">Отправить</button>
+						<svg class="tours-svg tour-overview__like book-heart__btn" tabindex=0 width="40" height="40"
+							viewBox="0 0 40 40" title="heart" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<circle class="svg-path" cx="20" cy="20" r="20" fill="transparent" />
+							<path class="svg-path"
+								d="M28.8401 12.61C28.3294 12.099 27.7229 11.6936 27.0555 11.4171C26.388 11.1405 25.6726 10.9982 24.9501 10.9982C24.2276 10.9982 23.5122 11.1405 22.8448 11.4171C22.1773 11.6936 21.5709 12.099 21.0601 12.61L20.0001 13.67L18.9401 12.61C17.9084 11.5783 16.5092 10.9987 15.0501 10.9987C13.5911 10.9987 12.1918 11.5783 11.1601 12.61C10.1284 13.6417 9.54883 15.041 9.54883 16.5C9.54883 17.959 10.1284 19.3583 11.1601 20.39L12.2201 21.45L20.0001 29.23L27.7801 21.45L28.8401 20.39C29.3511 19.8792 29.7565 19.2728 30.033 18.6053C30.3096 17.9379 30.4519 17.2225 30.4519 16.5C30.4519 15.7775 30.3096 15.0621 30.033 14.3946C29.7565 13.7272 29.3511 13.1208 28.8401 12.61V12.61Z"
+								stroke="#D4D4D4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+						</svg>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</section>
+	<footer class="footer footer-tours footer-book">
+		<div class="container">
+			<div class="footer__content footer__content-tours ">
+				<div class="footer-logo">
+					<img class="footer-logo__img" src="./images/footer-logo.png" alt="">
+				</div>
+				<div class="footer-menu">
+					<nav class="footer-menu__inner">
+						<ul class="footer-menu__list">
+							<li><a href="index.html" class="menu__link">Главная</a></li>
+							<li><a href="excursions.html" class="menu__link">Экскурсии</a></li>
+							<li><a href="office.html" class="menu__link">Личный кабинет</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="footer-socials__phone">
+					<a href="tel:+380999098788" class="socials-phone-viber">+38 099 909 87 88</a>
+					<a href="tel:+380965057707" class="socials-phone-telegram">+38 096 505 77 07</a>
+					<a href="#" class="socials-phone-bot">Телеграм-бот DwdTravel</a>
+				</div>
+				<div class="footer-social">
+					<div class="footer-social__mail">
+						<a href="mailto:office@perotravel.ru" class="social__mail">office@perotravel.ru</a>
+					</div>
+					<div class="footer-social__network">
+						<a href="#" class="social__network">
+							<img src="./images/vkontakte-icon.svg" alt="" class="social__network"></a>
+						<a href="#" class="social__network">
+							<img src="./images/instagram-icon.svg" alt="" class="social__network"></a>
+						<a href="#" class="social__network">
+							<img src="./images/facebook-icon.svg" alt="" class="social__network"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	
+	<script src="js/main.min.js"></script>
+		<script type="text/javascript" src="slick/slick.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+		<script src="js/libs.min.js"></script>
+		<script src="js/main.js"></script>
+</body>
+
+</html>
